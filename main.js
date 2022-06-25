@@ -22,7 +22,7 @@ const div = document.querySelector(".time div");
 
         const Stoper = () => {
             setseconds++;
-            if(seconds === 0){
+            if(seconds === 0 && minutes === 0 ){
                 div.textContent = `0.${setseconds}`; 
             } else if(minutes === 0){
                 if(setseconds<10){
